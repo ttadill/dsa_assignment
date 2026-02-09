@@ -1,8 +1,8 @@
 # Data Structures and Algorithms Assignment
 
-**Student Name**: Tadillata Bhandari 
-**CS-I (II/I)**
-**Roll no.**: 12 
+**Student Name**: Tadillata Bhandari  
+**CS-I (II/I)**  
+**Roll no.**: 12  
 **Course**: COMP202 - Data Structures and Algorithms  
 **Repository**: `dsa_assignment`
 
