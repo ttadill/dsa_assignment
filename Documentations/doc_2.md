@@ -134,3 +134,64 @@ The `main()` function:
 - **Postfix**: `3 4 + 2 *`
 - **Evaluation**: (3 + 4) * 2 = 14
 
+## Sample Output
+
+```
+=========================================
+  INFIX TO POSTFIX CONVERTER & EVALUATOR
+=========================================
+
+Test Case 1:
+Infix Expression:   3+4*2
+Postfix Expression: 3 4 2 * + 
+Evaluation Result:  11
+-------------------------------------------
+
+Test Case 2:
+Infix Expression:   3+4*2/(1-5)^2
+Postfix Expression: 3 4 2 * 1 5 - 2 ^ / + 
+Evaluation Result:  3
+-------------------------------------------
+
+Test Case 3:
+Infix Expression:   (3+4)*2
+Postfix Expression: 3 4 + 2 * 
+Evaluation Result:  14
+-------------------------------------------
+
+Test Case 4:
+Infix Expression:   5+3*2-8/4
+Postfix Expression: 5 3 2 * + 8 4 / - 
+Evaluation Result:  9
+-------------------------------------------
+
+Test Case 5:
+Infix Expression:   2^3^2
+Postfix Expression: 2 3 2 ^ ^ 
+Evaluation Result:  512
+-------------------------------------------
+
+Enter your infix expression (digits and operators only): 7+3*2
+Infix Expression:   7+3*2
+Postfix Expression: 7 3 2 * + 
+Evaluation Result:  13
+```
+
+## Compilation and Execution
+
+```bash
+gcc prog_2.c -o prog_2 -lm
+./prog_2
+```
+
+**Note**: `-lm` flag is required for linking the math library (pow function).
+
+## Key Concepts
+- **Infix**: Operators between operands (A + B)
+- **Postfix**: Operators after operands (A B +)
+- **Advantages of Postfix**:
+  - No parentheses needed
+  - No operator precedence rules needed
+  - Easy to evaluate using stack
+- Uses Shunting Yard Algorithm by Edsger Dijkstra
+- Handles operator precedence and associativity correctly
